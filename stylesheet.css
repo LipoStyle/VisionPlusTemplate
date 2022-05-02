@@ -1,0 +1,343 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(207, 204, 199, 0.438);
+  color: rgb(0, 1, 2);
+  font-size: 34px;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+/* this is the header section */
+header {
+  background-color: #140d0d25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo eterias section */
+.logoEterias {
+  margin:0;
+  padding-left: 30px;
+}
+/* navigation menu section */
+header .navigationBar {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3d3d41;
+}
+.logoEterias img{
+  margin: 0;
+  padding: 0;
+}
+header .navigationBar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .navigationBar li{
+  list-style: none;
+}
+.navigationBar ul li a {
+  text-decoration: none;
+  color: #58585a;
+  padding: 10px;
+  display: block;
+  font-weight: 600;
+}
+.navigationBar ul li a:hover {
+  text-decoration: none;
+  color: #2c7896;
+}
+/* burger menu */
+.toggleButton{
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70px;
+  height: 51px;
+}
+.toggleButton .bar{
+  height: 10px;
+  width: 100%;
+  background-color: #58585a;
+  border-radius: 10px;
+}
+/* this is the main body section */
+.mainBody {
+  border: 1px solid black;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+/* this is the filter section */
+.mainBody .filter{
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  box-sizing: border-box;
+  background-color: #58585ad5;
+  border-radius: 10px;
+  color: #211111;
+}
+/* this is the filter section for first <ul>3itms</ul> */
+.mainBody .filter .filter-first{
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/* this is the styling for "first item of the first list" */
+.mainBody .filter .filter-first #filter-button{
+  text-align: center;
+	font-weight: 700;
+	border-radius: 0.5rem;
+	box-shadow: inset 0px 0px 15px 5px rgb(166, 196, 196);
+  color: rgba(255, 239, 21, 0.671);
+}
+/* this is the styling of the second item of the first list which is a list too */
+#gender ul,
+#sub-gender ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#gender ul li,
+#sub-gender ul li{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+	border-radius: 0.5rem;
+	box-shadow: inset 0 0 0 0px #000;
+	transition: border-radius 0.3s, box-shadow 0.3s, color 0.3s;
+	transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+}
+#gender ul li:nth-child(4) p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+#gender ul li:hover,
+#sub-gender ul li:hover{
+  cursor: pointer;
+  border-radius: 15px;
+  color: rgb(119, 14, 54);
+	box-shadow: inset 0 0 0 40px rgb(190, 179, 80);
+	transition-delay: 0s, 0s, 0.2s
+}
+.negate{
+  cursor: pointer;
+  color: antiquewhite;
+  background-color: #211111;
+}
+
+/* this is the item section */
+.items {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.item{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+/* test */
+.item img {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+}
+.item .itemInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.itemInformation p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+/* this is the footer section */
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #140d0d;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: aliceblue;
+}
+/* onoma etairias */
+footer .onomaeterias{
+  margin: 0;
+  padding: 0;
+}
+footer .onomaeterias p {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  letter-spacing: 10px;
+  color: antiquewhite;
+  text-align: center;
+}
+footer .onomaeterias p:nth-child(2){
+  margin-top: 3px;
+  font-size: 10px;
+  
+}
+/* copyright text */
+footer .copyright {
+  color: antiquewhite;
+  font-size: 22px;
+}
+/* social media */
+.social-media {
+  margin: 0;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social-media .instagram {
+  background-image: url(img/2.png);
+  width: 52px;
+  height: 45px;
+}
+.social-media .instagram:hover {
+  background-image: url(img/2hover.png);
+}
+.social-media .facebook {
+  background-image: url(img/3.png);
+  width: 52px;
+  height: 45px;
+}
+.social-media .facebook:hover {
+  background-image: url(img/3hover.png);
+}
+.social-media .youtube {
+  background-image: url(img/4.png);
+  width: 52px;
+  height: 45px;
+}
+.social-media .youtube:hover {
+  background-image: url(img/4hover.png);
+}
+@media(max-width: 930px){
+  /* header section */
+  .toggleButton{
+    display: flex;
+  }
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  header .navigationBar{
+    width: 100%;
+    display: none;
+  }
+  header .navigationBar ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .navigationBar ul li{
+    background-color:#3d3d41;
+    text-align: center;
+  }
+  header .navigationBar ul a{
+    color: #beaeaedc;
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  header .navigationBar.active{
+    display: flex;
+  }
+  /* end of header section */
+  /* body section */
+  .mainBody{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .mainBody .filter{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+  }
+  .mainBody .filter .filter-first{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 5px;
+  }
+  #gender ul,
+  #sub-gender ul{
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  }
+  #gender ul li,
+  #sub-gender ul li{
+    margin: 0;
+    padding: 3px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+  .mainBody .filter .filter-first #filter-button{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.651);
+    box-shadow: none;
+    color:#d4d4db;
+  }
+  .negate{
+    cursor: pointer;
+    color: antiquewhite;
+    background-color: #211111;
+  }
+  .items{
+    width: 100%;
+  }
+}
