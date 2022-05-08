@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: rgb(150, 154, 156);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-shadow: inset;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+header .logoEterias{
+  text-align: center;
+  width: 35%;
+}
+header .navigationBar{
+  width: 65%;
+}
+header .navigationBar ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .navigationBar ul li{
+  text-align: center;
+  width: 100%;
+}
+header .navigationBar ul li a{
+  text-decoration: none;
+  color: rgb(63, 73, 70);
+  font-size: 30px;
+}
+header .navigationBar ul li a:hover{
+  color: rgb(29, 83, 114);
+}
+/* burger menu */
+.toggleButton{
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 77px;
+  height: 60px;
+}
+.toggleButton .bar{
+  height: 10px;
+  width: 100%;
+  background-color: #58585a;
+  border-radius: 10px;
+}
+/* for tablet screens */
+@media (max-width: 960px){
+  .toggleButton{
+    display: flex;
+  }
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navigationBar{
+    width: 100%;
+    display: none;
+  }
+  header .navigationBar ul{
+    flex-direction: column;
+    gap: 5px;
+  }
+  header .navigationBar.active{
+    display: flex;
+  }
+}

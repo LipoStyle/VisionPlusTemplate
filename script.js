@@ -30,15 +30,70 @@ addingClickToSubGender.forEach(item => item.addEventListener("click", function t
     item.classList.add("negate");
   }
 }));
+// creating and appending
+// creating imgURL
+function imgURL(props){
+  return React.createElement(
+    "img",
+    {src: props.url},
+    null
+  );
+}
+// creating nameParagraph
+function nameOfGlass(props){
+  return React.createElement(
+    "p",
+    null,
+    props.name
+  );
+}
+// creating colorParagraph
+function colorOfGlass(props){
+  return React.createElement(
+    "p",
+    null,
+    props.color
+  );
+}
+// creating sizeParagraph
+function sizeOfGlass(props){
+  return React.createElement(
+    "p",
+    null,
+    props.size
+  );
+}
+// creating the div for theese atributes
+function createDiv(name,color,size){
+ return React.createElement(
+   "div",
+   {class: "itemInformation"},
+   nameOfGlass(name),
+   colorOfGlass(color),
+   sizeOfGlass(size)
+ );
+}
+  // craete itemDiv
+function createItem(url, name, color, size){
+  return React.createElement(
+    "div",
+    {class: "item"},
+    React.createElement(imgURL, {src:url}),
+    createDiv(name,color, size)
+  );
+}
+function createItems(){
+  return React.createElement(
+    "div",
+    {class: "items"},
+    createItem("img/glasses1.jpg", 514336, "Green", "32m"),
+    createItem("img/glasses1.jpg", 614126, "Yellow", "45m"),
+    createItem("img/glasses1.jpg", 425336, "Red", "22m"),
+  );
+}
 
-// table of the content
-var glasses = [
-  {
-    imgLink:"test",
-    genderFilter:"Test1",
-    subGenderFilter:"Test3",
-    code:"test2",
-    color:"red"
-  }
-]
-console.log(glasses)
+ReactDOM.render(
+  createItems(),
+  document.querySelector(".items")
+);
+console.log(imgURL);
