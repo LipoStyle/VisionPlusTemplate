@@ -35,7 +35,10 @@ header .navigationBar ul li a{
   font-size: 30px;
 }
 header .navigationBar ul li a:hover{
+  padding: 5px;
+  border-radius: 20px;
   color: rgb(29, 83, 114);
+  box-shadow: rgb(29, 83, 114) 5px 5px 70px;
 }
 /* burger menu */
 .toggleButton{
