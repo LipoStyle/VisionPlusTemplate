@@ -8,9 +8,8 @@ header{
   box-shadow: inset;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 10px;
 }
 header .logoEterias{
   text-align: center;
@@ -76,5 +75,22 @@ header .navigationBar ul li a:hover{
   }
   header .navigationBar.active{
     display: flex;
+  }
+}
+@media (max-width: 595px){
+  header .logoEterias{
+    margin: 0;
+    padding: 0;
+    transform: scale(80%);
+  }
+  header .navigationBar{
+    margin: 0;
+    padding: 0;
+    transform: scale(80%);
+  }
+  header .toggleButton{
+    margin: 0;
+    padding: 0;
+    transform: scale(80%);
   }
 }
