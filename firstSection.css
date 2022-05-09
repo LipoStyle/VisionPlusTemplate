@@ -7,7 +7,7 @@
   gap: 5px;
 }
 .greetings{
-  width: 40%;
+  width: 100%;
   /* border: 1px solid black; */
 
   display: flex;
@@ -15,7 +15,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
-  margin: 20px auto;
+  padding: 50px;
 }
 .greetings h2{
   padding-bottom: 10px;
@@ -54,7 +54,7 @@
 .smallPreview{
   box-sizing: border-box;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 20px;
@@ -64,11 +64,22 @@
   font-size: 28px;
   padding: 10px;
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/3;
 }
 .smallPreview img{
   /* border: 2px solid black; */
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0px 0px 20px 5px rgba(75, 19, 40, 0.63);
+}
+@media (max-width: 960px){
+  .firstSection{
+    flex-direction: column;
+  }
+  .smallPreview{
+    gap: 25px;
+  }
+  .smallPreview img{
+    grid-column: 1/3;
+  }
 }
