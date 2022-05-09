@@ -43,28 +43,28 @@ footer .copyright {
   gap: 40px;
 }
 .social-media .instagram {
-  background-image: url(../../img/2.png);
+  background-image: url(img/2.png);
   width: 52px;
   height: 45px;
 }
 .social-media .instagram:hover {
-  background-image: url(../../img/2hover.png);
+  background-image: url(img/2hover.png);
 }
 .social-media .facebook {
-  background-image: url(../../img/3.png);
+  background-image: url(img/3.png);
   width: 52px;
   height: 45px;
 }
 .social-media .facebook:hover {
-  background-image: url(../../img/3hover.png);
+  background-image: url(img/3hover.png);
 }
 .social-media .youtube {
-  background-image: url(../../img/4.png);
+  background-image: url(img/4.png);
   width: 52px;
   height: 45px;
 }
 .social-media .youtube:hover {
-  background-image: url(../../img/4hover.png);
+  background-image: url(img/4hover.png);
 }
 @media (max-width: 595px) {
   footer .onomaeterias p:nth-child(1),

@@ -2,6 +2,7 @@
   width: 100%;
   margin:5px 0px;
   background-color: rgb(33, 85, 81);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -81,6 +82,8 @@
     gap: 25px;
   }
   .smallPreview img{
+    width: 85%;
+    margin: 0px auto;
     grid-column: 1/3;
   }
 }

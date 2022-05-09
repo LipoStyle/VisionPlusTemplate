@@ -1,0 +1,64 @@
+.secondSection{
+  margin: 8px 0px;
+  background-color: rgb(150, 154, 156);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0px 30px;
+}
+.secondSection > div{
+  margin: 10px;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+}
+.prudoctLink h2,
+.contactUsLink h2,
+.aboutLink h2{
+  font-size:35px;
+  color: rgb(29, 83, 114);
+}
+.prudoctLink p,
+.contactUsLink p,
+.aboutLink p{
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: rgb(85, 82, 74);
+}
+.prudoctLink a,
+.contactUsLink a,
+.aboutLink a{
+  align-self: flex-start;
+  text-decoration: none;
+  margin: 20px 0px;
+  padding: 10px;
+  border: 2px solid rgb(33, 85, 81);;
+  border-radius: 10px;
+  font-size: 35px;
+  color: rgb(33, 85, 81);
+  transition: all 0.25s ease-in-out;
+}
+.prudoctLink a:hover,
+.contactUsLink a:hover,
+.aboutLink a:hover{
+  border: 1px solid black;
+  background-color: rgb(33, 85, 81);
+  color: rgb(250, 250, 250);
+  box-shadow: 0px 0px 20px 5px rgb(33, 85, 81);
+}
+@media (max-width: 705px){
+  .secondSection{
+    padding:0px 50px;
+    flex-direction: column;
+  }
+  .prudoctLink a,
+  .contactUsLink a,
+  .aboutLink a{
+    font-size: 30px;
+  }
+}
