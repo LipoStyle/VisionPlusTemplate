@@ -19,13 +19,13 @@
 .prudoctLink h2,
 .contactUsLink h2,
 .aboutLink h2{
-  font-size:35px;
+  font-size:30px;
   color: rgb(29, 83, 114);
 }
 .prudoctLink p,
 .contactUsLink p,
 .aboutLink p{
-  font-size: 15px;
+  font-size: 12px;
   line-height: 25px;
   letter-spacing: 1px;
   color: rgb(85, 82, 74);
@@ -39,7 +39,8 @@
   padding: 10px;
   border: 2px solid rgb(33, 85, 81);;
   border-radius: 10px;
-  font-size: 35px;
+  font-size: 30px;
+  font-weight: bold;
   color: rgb(33, 85, 81);
   transition: all 0.25s ease-in-out;
 }
