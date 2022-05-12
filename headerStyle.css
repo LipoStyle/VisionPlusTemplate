@@ -1,6 +1,9 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Apple Chancery, cursive;
+  font-style: oblique;
+  font-size: 24px;
 }
 header{
   background-color: rgb(150, 154, 156);
@@ -31,7 +34,7 @@ header .navigationBar ul li{
 header .navigationBar ul li a{
   text-decoration: none;
   color: rgb(63, 73, 70);
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 header .navigationBar ul li a:hover{
   padding: 5px;
@@ -81,16 +84,16 @@ header .navigationBar ul li a:hover{
   header .logoEterias{
     margin: 0;
     padding: 0;
-    transform: scale(80%);
+    transform: scale(70%);
   }
   header .navigationBar{
     margin: 0;
     padding: 0;
-    transform: scale(80%);
+    transform: scale(70%);
   }
   header .toggleButton{
     margin: 0;
     padding: 0;
-    transform: scale(80%);
+    transform: scale(70%);
   }
 }

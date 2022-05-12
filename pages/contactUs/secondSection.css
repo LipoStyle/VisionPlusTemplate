@@ -1,0 +1,8 @@
+.secondSection{
+  display: flex;
+}
+.secondSection > div{
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}

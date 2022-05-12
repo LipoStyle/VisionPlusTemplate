@@ -16,18 +16,36 @@
   display: flex;
   flex-direction: column;
 }
+/* .prudoctLink img{
+  width: 90px;
+  padding: 15px;
+  margin: 15px 0px;
+  border: 2px solid rgb(0, 0, 0);
+  align-self: center;
+  border-radius: 50%;
+}
+.contactUsLink img{
+  width: 90px;
+  margin: 5px 0px;
+  align-self: center;
+}
+.aboutLink img{
+  width: 90px;
+  padding: 10px;
+  align-self: center;
+} */
 .prudoctLink h2,
 .contactUsLink h2,
 .aboutLink h2{
-  font-size:30px;
+  font-size:1.1em;
   color: rgb(29, 83, 114);
 }
 .prudoctLink p,
 .contactUsLink p,
 .aboutLink p{
-  font-size: 12px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  font-size:0.5em;
+  line-height: 1em;
+  letter-spacing: 0.09em;
   color: rgb(85, 82, 74);
 }
 .prudoctLink a,
@@ -39,7 +57,7 @@
   padding: 10px;
   border: 2px solid rgb(33, 85, 81);;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 0.9em;
   font-weight: bold;
   color: rgb(33, 85, 81);
   transition: all 0.25s ease-in-out;
@@ -60,6 +78,6 @@
   .prudoctLink a,
   .contactUsLink a,
   .aboutLink a{
-    font-size: 30px;
+    font-size: 0.6em;
   }
 }
